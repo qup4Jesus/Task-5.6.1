@@ -109,7 +109,14 @@ namespace ConsoleApp4
                 if (int.TryParse(age, out number))
                 {
                     number = int.Parse(age);
-                    break;
+                    if (number > 0)
+                    {
+                        break;
+                    }
+                    else
+                    {
+                        Console.WriteLine("\nОшибка. Некоректное значение!\n");
+                    }
                 }
                 else
                 {
